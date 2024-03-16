@@ -1,14 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import mysql.connector
-
-
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="upsidedown",
-    database="App"
-)
+from db_connect import mydb
 
 cursor = mydb.cursor()
 
